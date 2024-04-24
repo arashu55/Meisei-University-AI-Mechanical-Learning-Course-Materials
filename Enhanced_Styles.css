@@ -1,0 +1,39 @@
+
+/* Additional CSS for modern styling */
+body, h1, h2, h3, h4, p, ul, ol, li, table, th, td, code {
+    transition: all 0.3s ease;
+}
+
+h1, h2, h3, h4 {
+    font-weight: 300;
+}
+
+ul, ol {
+    list-style-position: inside;
+}
+
+table {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+th, td {
+    background-color: #f9f9f9;
+}
+
+th {
+    background-color: #f1f1f1;
+}
+
+code {
+    background-color: #f5f5f5;
+}
+
+/* Responsive tables */
+table {
+    width: 100%;
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+}

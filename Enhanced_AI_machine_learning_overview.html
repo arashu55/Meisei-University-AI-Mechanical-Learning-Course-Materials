@@ -1,0 +1,643 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<!-- 2024-04-24 水 10:52 -->
+<link rel="stylesheet" href="Enhanced_Styles.css">
+<script src="Interactive_Scripts.js"></script>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>AI・機械学習１ 第2回 人工知能の歴史</title>
+<meta name="author" content="Yanami Hitoshi" />
+<meta name="generator" content="Org Mode" />
+<style>
+/* Existing CSS */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+    margin: 0;
+}
+
+#content {
+    max-width: 800px;
+    margin: 20px auto;
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2, h3, h4 {
+    color: #333;
+}
+
+a {
+    color: #0066cc;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+ul, ol {
+    padding-left: 20px;
+}
+
+code {
+    font-family: monospace;
+    background-color: #eee;
+    padding: 2px 5px;
+    border-radius: 3px;
+}
+
+table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+}
+
+caption {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* New CSS for Animations and Responsive Design */
+nav {
+    background: #333;
+    padding: 10px 20px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #ff6347;
+}
+
+.toggle-theme {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    padding: 10px;
+    background-color: #ddd;
+    border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+    #content {
+        width: 90%;
+        padding: 10px;
+    }
+}
+</style>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        displayAlign: "center",
+        displayIndent: "0em",
+
+        "HTML-CSS": { scale: 100,
+                        linebreaks: { automatic: "false" },
+                        webFont: "TeX"
+                       },
+        SVG: {scale: 100,
+              linebreaks: { automatic: "false" },
+              font: "TeX"},
+        NativeMML: {scale: 100},
+        TeX: { equationNumbers: {autoNumber: "AMS"},
+               MultLineWidth: "85%",
+               TagSide: "right",
+               TagIndent: ".8em"
+             }
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS_HTML"></script>
+</head>
+<body>
+<div id="content" class="content">
+<h1 class="title">AI・機械学習１ 第2回 人工知能の歴史</h1>
+<div id="table-of-contents" role="doc-toc">
+<h2>Table of Contents</h2>
+<div id="text-table-of-contents" role="doc-toc">
+<ul>
+<li><a href="#org973abc4">1. 第1回 8x8<sub>sheet</sub> より</a>
+<ul>
+<li><a href="#org160ab87">1.1. Q1 AI・機械学習で何を知りたい？興味は？</a></li>
+<li><a href="#org5a37162">1.2. Q2 知っている機械学習の手法や用語は？</a></li>
+<li><a href="#org114ef64">1.3. Q3 課題レポート、期末試験について</a>
+<ul>
+<li><a href="#orgc9f1d42">1.3.1. 課題レポート（予定）</a></li>
+<li><a href="#orge524a2e">1.3.2. プロジェクトの例</a></li>
+</ul>
+</li>
+<li><a href="#org152cb8c">1.4. Q4 自由記述</a></li>
+</ul>
+</li>
+<li><a href="#org05424dc">2. AI・機械学習とは？</a>
+<ul>
+<li><a href="#org98b01cf">2.1. AIとは？</a></li>
+<li><a href="#org14fccb9">2.2. 機械学習とは？</a>
+<ul>
+<li><a href="#org2882463">2.2.1. 計算機とは</a></li>
+</ul>
+</li>
+<li><a href="#org658433f">2.3. AIと機械学習の関係</a></li>
+</ul>
+</li>
+<li><a href="#orga2987a1">3. 人工知能の歴史</a>
+<ul>
+<li><a href="#org1f6be7f">3.1. 人工知能以前から黎明期</a>
+<ul>
+<li><a href="#org533a238">3.1.1. Reference</a></li>
+</ul>
+</li>
+<li><a href="#org7751fd3">3.2. 第1次AIブーム</a></li>
+<li><a href="#org08c3ee2">3.3. 第2次AIブーム</a></li>
+<li><a href="#org209b483">3.4. ヒトの知能への挑戦</a></li>
+<li><a href="#org6abf010">3.5. 第3次AIブーム</a>
+<ul>
+<li><a href="#org3301804">3.5.1. 背景</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org973abc4" class="outline-2">
+<h2 id="org973abc4"><span class="section-number-2">1.</span> 第1回 8x8<sub>sheet</sub> より</h2>
+<div class="outline-text-2" id="text-1">
+</div>
+<div id="outline-container-org160ab87" class="outline-3">
+<h3 id="org160ab87"><span class="section-number-3">1.1.</span> Q1 AI・機械学習で何を知りたい？興味は？</h3>
+<div class="outline-text-3" id="text-1-1">
+<ul class="org-ul">
+<li>AI・機械学習とは何か？何ができるか？</li>
+
+<li>機械学習のやり方。AIに学ばせる方法</li>
+
+<li>どう活用されているか。既存製品でどのような手法が用いられているか</li>
+
+<li>ペッパー君の作り方</li>
+<li>AI小暮教授の作り方!!!!ver1.01</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org5a37162" class="outline-3">
+<h3 id="org5a37162"><span class="section-number-3">1.2.</span> Q2 知っている機械学習の手法や用語は？</h3>
+<div class="outline-text-3" id="text-1-2">
+<ul class="org-ul">
+<li>教師あり学習</li>
+<li>最小二乗法</li>
+<li>回帰直線</li>
+<li>k近傍法</li>
+<li>決定木</li>
+
+<li>二分探索</li>
+<li>モンテカルロ法</li>
+
+<li>敵対性生成ネットワーク</li>
+<li>ニューラルネットワーク</li>
+<li>ディープラーニング</li>
+<li>強化学習</li>
+
+<li>何も知らない →入門書を1冊読むこと
+一般教養としての本。文系の人向けの本
+数式を使っていないもの。専門書でなく新書など</li>
+</ul>
+</div>
+</div>
+
+<div id="outline-container-org114ef64" class="outline-3">
+<h3 id="org114ef64"><span class="section-number-3">1.3.</span> Q3 課題レポート、期末試験について</h3>
+<div class="outline-text-3" id="text-1-3">
+<ul class="org-ul">
+<li>ChatGPTの正確性</li>
+<li>生成系AIの問題点</li>
+</ul>
+
+<p>
+一つのやり方：
+課題レポート「（機械学習手法や用語）について調べまとめよ」
+ChatGPTに聞いてみる。
+「（機械学習手法や用語）についてA4レポート2枚の長さにまとめて」
+ChatGPTの出力したものが正確か、情報源はどこか、などを調べる
+</p>
+</div>
+
+<div id="outline-container-orgc9f1d42" class="outline-4">
+<h4 id="orgc9f1d42"><span class="section-number-4">1.3.1.</span> 課題レポート（予定）</h4>
+<div class="outline-text-4" id="text-1-3-1">
+<p>
+「（機械学習の手法や用語）について調べよ」
+手法や用語をどんどん挙げていく。
+一つの課題に取り組める上限人数（例えば3人）を決めておく
+</p>
+
+<p>
+あとでレポートを共有する
+</p>
+
+<p>
+(/ (* 30 4) 3)40
+</p>
+</div>
+</div>
+
+<div id="outline-container-orge524a2e" class="outline-4">
+<h4 id="orge524a2e"><span class="section-number-4">1.3.2.</span> プロジェクトの例</h4>
+<div class="outline-text-4" id="text-1-3-2">
+<p>
+授業で学ぶ機械学習手法（シラバスに出ている）の一つ（以上）を取り上げ自分で実装してみる
+</p>
+
+<p>
+アルゴリズムの理解
+プログラミングのスキル
+</p>
+
+<p>
+の両方の力がつく
+</p>
+
+<p>
+実装がどうなっているか、pythonのプログラムを解読する
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org152cb8c" class="outline-3">
+<h3 id="org152cb8c"><span class="section-number-3">1.4.</span> Q4 自由記述</h3>
+<div class="outline-text-3" id="text-1-4">
+<ul class="org-ul">
+<li>ラーメン極める</li>
+<li>つばさ家行きたいです</li>
+<li>美味しいラーメン屋さん教えてほしいです</li>
+</ul>
+
+<p>
+ラーメンのデータを集めて何かできないか
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org05424dc" class="outline-2">
+<h2 id="org05424dc"><span class="section-number-2">2.</span> AI・機械学習とは？</h2>
+<div class="outline-text-2" id="text-2">
+</div>
+<div id="outline-container-org98b01cf" class="outline-3">
+<h3 id="org98b01cf"><span class="section-number-3">2.1.</span> AIとは？</h3>
+<div class="outline-text-3" id="text-2-1">
+<ul class="org-ul">
+<li>AIは何の略？</li>
+<li>AIを日本語で言うと？</li>
+</ul>
+<p>
+A1. Artificial Intelligence
+A2. 人工知能（漢字変換を間違えて人口知能としないように注意）
+</p>
+
+<p>
+生物（ヒト）の知能や知性を手本としたソフトウェア（計算プログラム）を開発する技術
+</p>
+<ul class="org-ul">
+<li>論理的推論</li>
+<li>知識処理</li>
+<li>知識・経験の蓄積</li>
+<li>知識・経験からの推測</li>
+<li>メタ学習</li>
+</ul>
+
+<p>
+画像認識 視覚
+音声認識 聴覚
+言語処理 文字列、話し言葉
+</p>
+</div>
+</div>
+
+<div id="outline-container-org14fccb9" class="outline-3">
+<h3 id="org14fccb9"><span class="section-number-3">2.2.</span> 機械学習とは？</h3>
+<div class="outline-text-3" id="text-2-2">
+<ul class="org-ul">
+<li>機械学習を英語で言うと？</li>
+<li>機械学習の機械とは？</li>
+</ul>
+<p>
+Machine Learning
+計算機のこと。計算機は電子計算機、つまり、コンピュータのこと。電卓のことではない
+</p>
+</div>
+
+<div id="outline-container-org2882463" class="outline-4">
+<h4 id="org2882463"><span class="section-number-4">2.2.1.</span> 計算機とは</h4>
+<div class="outline-text-4" id="text-2-2-1">
+</div>
+<ol class="org-ol">
+<li><a id="org64cc0b6"></a>ハードウェア<br />
+<div class="outline-text-5" id="text-2-2-1-1">
+<p>
+CPU、メモリ、HDD、キーボード、ディスプレイ、&#x2026;
+演算装置、記憶装置、入力装置、出力装置、制御装置
+</p>
+</div>
+</li>
+<li><a id="orgc2ed67c"></a>ソフトウェア<br />
+<ol class="org-ol">
+<li><a id="orge9c8a55"></a>Operating System (OS)<br />
+<div class="outline-text-6" id="text-2-2-1-2-1">
+<ul class="org-ul">
+<li>入出力の制御</li>
+<li>ソフトウェアの起動・終了・切り替え</li>
+<li>ファイルの管理</li>
+<li>他コンピュータとのネットワーク通信</li>
+</ul>
+</div>
+<ol class="org-ol">
+<li><a id="orgdbae470"></a>OSの種類<br />
+<div class="outline-text-7" id="text-2-2-1-2-1-1">
+<p>
+Windows
+Mac OS
+Unix
+Linux
+</p>
+
+<p>
+iOS
+Android
+</p>
+</div>
+</li>
+</ol>
+</li>
+
+<li><a id="orgac9ce3b"></a>個々のソフト（プログラム、アプリ）<br />
+<div class="outline-text-6" id="text-2-2-1-2-2">
+<ul class="org-ul">
+<li>Microsoft Word, Excel, Powerpoint, &#x2026;</li>
+<li>C, C++, Java, Python, Ruby, &#x2026;</li>
+<li>VS Code, Atom, 秀丸, &#x2026;</li>
+<li>Teams, Slack, Zoom, &#x2026;</li>
+</ul>
+</div>
+</li>
+</ol>
+</li>
+</ol>
+</div>
+</div>
+
+<div id="outline-container-org658433f" class="outline-3">
+<h3 id="org658433f"><span class="section-number-3">2.3.</span> AIと機械学習の関係</h3>
+<div class="outline-text-3" id="text-2-3">
+<p>
+機械学習は人工知能を実現するための手法の一つ
+</p>
+
+<p>
+計算機科学 \(\superset\) ソフトウェア科学 \(\superset\) 人工知能 \(\superset\) 機械学習
+</p>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orga2987a1" class="outline-2">
+<h2 id="orga2987a1"><span class="section-number-2">3.</span> 人工知能の歴史</h2>
+<div class="outline-text-2" id="text-3">
+</div>
+<div id="outline-container-org1f6be7f" class="outline-3">
+<h3 id="org1f6be7f"><span class="section-number-3">3.1.</span> 人工知能以前から黎明期</h3>
+<div class="outline-text-3" id="text-3-1">
+<p>
+1936年 チューリング・マシン
+英国の数学者 Alan Turing
+現在のコンピュータの概念を数学的に定式化
+</p>
+
+<p>
+1943年 McCulloch-Pittsモデル
+初めてのニューロンの数学モデル
+</p>
+
+<p>
+1946年 ENIAC
+世界初のコンピュータ
+弾道計算のため
+プログラム変更にハードウェアの変更を要する
+</p>
+
+<p>
+1945年 ノイマン型コンピュータ
+John von Neumann
+プログラムをメモリに記憶して計算を行う汎用電子計算機の構想
+（ENIAC設計後のEDVAC構想をまとめたレポート）
+</p>
+
+<p>
+1950年 チューリングテスト
+計算機が人間のような知能をもつかをどう判定するか
+映画『イミテーション・ゲーム』
+</p>
+
+<p>
+1956年 ダートマス会議
+Artificial Intelligencd (AI)という言葉が生まれた
+</p>
+</div>
+
+<div id="outline-container-org533a238" class="outline-4">
+<h4 id="org533a238"><span class="section-number-4">3.1.1.</span> Reference</h4>
+<div class="outline-text-4" id="text-3-1-1">
+<ul class="org-ul">
+<li>『「人工知能」前夜』 杉本舞 青土社</li>
+<li>『ノイマン・ゲーデル・チューリング』 高橋昌一郎 筑摩選書 2018</li>
+<li>『フォン・ノイマンの生涯』 N. Macrae著、渡辺正他訳 朝日選書 1998</li>
+<li>『フォン・ノイマンの哲学　人間のフリをした悪魔』 高橋昌一郎 講談社現代新書 2021</li>
+<li>論理学の歴史とコンピュータ, 高橋正子 (国際基督教大学), 数理解析研究所講究録 1286 巻 2002 年 85-100, <a href="https://www.kurims.kyoto-u.ac.jp/~kyodo/kokyuroku/contents/pdf/1286-10.pdf">https://www.kurims.kyoto-u.ac.jp/~kyodo/kokyuroku/contents/pdf/1286-10.pdf</a></li>
+</ul>
+</div>
+</div>
+</div>
+
+<div id="outline-container-org7751fd3" class="outline-3">
+<h3 id="org7751fd3"><span class="section-number-3">3.2.</span> 第1次AIブーム</h3>
+<div class="outline-text-3" id="text-3-2">
+<p>
+1950年代後半から60年代
+</p>
+
+<p>
+人間の推論をプログラム化
+探索時の組合せ爆発
+toy problems しか解けず
+</p>
+</div>
+</div>
+
+<div id="outline-container-org08c3ee2" class="outline-3">
+<h3 id="org08c3ee2"><span class="section-number-3">3.3.</span> 第2次AIブーム</h3>
+<div class="outline-text-3" id="text-3-3">
+<p>
+1980年代
+</p>
+
+<p>
+エキスパートシステム
+専門家の知識をコンピュータに蓄積
+if-then
+</p>
+
+<p>
+日本 第５世代コンピュータプロジェクト（ICOT）
+通産省 570億円
+</p>
+
+<p>
+知識入力の手間
+暗黙知
+言語化できない知識
+</p>
+</div>
+</div>
+
+<div id="outline-container-org209b483" class="outline-3">
+<h3 id="org209b483"><span class="section-number-3">3.4.</span> ヒトの知能への挑戦</h3>
+<div class="outline-text-3" id="text-3-4">
+<p>
+1997年 <a href="https://en.wikipedia.org/wiki/Deep_Blue_(chess_computer)">Deep Blue</a>
+</p>
+
+<p>
+この当時、囲碁、将棋はアマチュアの初級者レベル
+</p>
+</div>
+</div>
+
+<div id="outline-container-org6abf010" class="outline-3">
+<h3 id="org6abf010"><span class="section-number-3">3.5.</span> 第3次AIブーム</h3>
+<div class="outline-text-3" id="text-3-5">
+<p>
+2000年代以降
+</p>
+
+<p>
+2012年
+画像識別コンペILSVRCでGeoffrey Hinton（トロント大学）のチームがこれまでの正解率を大きく改善し圧倒的勝利
+</p>
+
+<p>
+2015年
+ATARIのビデオゲームをプレイするAI
+<a href="https://www.nature.com/articles/nature14236">https://www.nature.com/articles/nature14236</a>
+49種類のゲームのうち、43種類で人間の上級者と同じレベルに
+</p>
+
+<p>
+2016年
+Google DeepMindによって開発された囲碁を打つプログラムGooleAlphaGoが元世界チャンピオンの李世乭に勝利
+<a href="https://ja.wikipedia.org/wiki/AlphaGo%E5%AF%BE%E6%9D%8E%E4%B8%96%E3%83%89%E3%83%AB">AlphaGo対李世乭</a>
+</p>
+
+<p>
+AutoML
+</p>
+
+<p>
+2018年
+BERT
+</p>
+
+<p>
+2022年
+ChatGPT
+</p>
+</div>
+
+<div id="outline-container-org3301804" class="outline-4">
+<h4 id="org3301804"><span class="section-number-4">3.5.1.</span> 背景</h4>
+<div class="outline-text-4" id="text-3-5-1">
+</div>
+<ol class="org-ol">
+<li><a id="org1a2a573"></a>蓄積されるデータ<br />
+<div class="outline-text-5" id="text-3-5-1-1">
+<ul class="org-ul">
+<li>ビッグデータ</li>
+<li>IoT</li>
+<li>スマホ</li>
+</ul>
+</div>
+</li>
+<li><a id="org55f45e2"></a>ハードウェアの進化<br />
+<div class="outline-text-5" id="text-3-5-1-2">
+<ul class="org-ul">
+<li>スーパーコンピュータ <a href="https://ja.wikipedia.org/wiki/%E4%BA%AC_(%E3%82%B9%E3%83%BC%E3%83%91%E3%83%BC%E3%82%B3%E3%83%B3%E3%83%94%E3%83%A5%E3%83%BC%E3%82%BF)">京</a>、富岳
+<a href="https://www.fujitsu.com/jp/about/businesspolicy/tech/k/whatis/system/index.html">https://www.fujitsu.com/jp/about/businesspolicy/tech/k/whatis/system/index.html</a></li>
+<li>GPGPU</li>
+<li>クラウド計算環境 AWS, Azure, GCP</li>
+</ul>
+</div>
+</li>
+<li><a id="org3d7a98b"></a>計算アルゴリズムの開発<br />
+<div class="outline-text-5" id="text-3-5-1-3">
+<p>
+大量データから特徴量を自動抽出しモデルを構築
+ディープラーニング
+</p>
+</div>
+</li>
+</ol>
+</div>
+</div>
+</div>
+</div>
+<div id="postamble" class="status">
+<p class="date">Date: 2024年4月17日(水)</p>
+<p class="author">Author: Yanami Hitoshi</p>
+<p class="date">Created: 2024-04-24 水 10:52</p>
+<p class="validation"><a href="https://validator.w3.org/check?uri=referer">Validate</a></p>
+</div>
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const links = document.querySelectorAll('a[href^="#"]');
+    for (let link of links) {
+        link.addEventListener('click', function(event) {
+            event.preventDefault();
+            let target = document.querySelector(this.getAttribute('href'));
+            target.scrollIntoView({behavior: 'smooth'});
+        });
+    }
+
+    const themeToggle = document.querySelector('.toggle-theme');
+    themeToggle.addEventListener('click', function() {
+        document.body.classList.toggle('dark-theme');
+        if (document.body.classList.contains('dark-theme')) {
+            this.textContent = 'Light Mode';
+        } else {
+            this.textContent = 'Dark Mode';
+        }
+    });
+});
+
+/* Dark Theme Styles */
+document.body.classList.add('dark-theme-style');
+</script></body>
+</html>
